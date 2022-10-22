@@ -1,0 +1,36 @@
+{
+    "extends": "./node_modules/@abbieben/vue/tsconfig.json",
+    "compilerOptions": {
+        "paths": {
+            "@/*": [
+                "resources/*"
+            ],
+            "~/*": [
+                "node_modules/*"
+            ],
+            "ziggy": [
+                "node_modules/ziggy-js/dist/vue.es.js",
+                //"vendor/tightenco/ziggy/dist/vue.es.js"
+            ]
+        },
+        "plugins": [
+            {
+                "name": "@vuedx/typescript-plugin-vue"
+            }
+        ],
+    },
+    "typedocOptions": {
+        "entryPoints": [
+            "resources/ts/app.ts"
+        ],
+        "out": "docs"
+    },
+    "include": [
+        "resources/**/*.ts",
+        "resources/**/*.vue"
+    ],
+    "exclude": [
+        "node_modules",
+        "public/**",
+    ]
+}

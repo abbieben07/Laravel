@@ -1,0 +1,13 @@
+app/*
+bootstrap/*
+config/*
+database/*
+node_modules/*
+public/*
+routes/*
+storage/*
+stubs/*
+tests/*
+vendor/*
+*.php
+resources/theme/*
